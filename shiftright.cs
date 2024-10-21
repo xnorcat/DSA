@@ -14,15 +14,14 @@ namespace ShiftRightiIG
 				array[i] = tempA;
 				tempA = tempB;
 				tempB = ((i+1) >= array.Length) ? 0 : array[i+1];
-				
 			}
-			return place;
+			return array;
 		}
 		
 		static void Main(string[] args)
 		{
 			int[] place = {1, 2, 3, 4, 5};
-			int data = 10;
+			int data = place[4];
 			
 			foreach (var element in place) {
 				Console.Write(element + " ");
