@@ -11,14 +11,13 @@ namespace Sort
 			data = SelectionSortSwap(data);
 
 
-			// foreach(var number in data){
-			// 	Console.Write(number + " ");
-			// }
+			foreach(var number in data){
+				Console.Write(number + " ");
+			}
 		}
 
 		static int[] SelectionSortSwap(int[] data)
 		{
-			bool swap = false;
 			for(int j = 0; j < data.Length - 1; j++)
 			{
 				int selectIndex = j;
@@ -32,18 +31,12 @@ namespace Sort
 				data[j] = data[selectIndex];
 				data[selectIndex] = tempA;
 
-				foreach(var number in data){
-					Console.Write(number + " ");
-				}
-				Console.WriteLine();
 			}
 			
 			return data;
 		}
 
-		static int[] SelectionSortShift(int[] data)
-		{
-			
-		}
+		
+
 	}
 }
